@@ -6,6 +6,8 @@
 radius = 100.601
 
 [node name="rock1" type="RigidBody2D"]
+gravity_scale = 0.0
+linear_velocity = Vector2( -100, 0 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
