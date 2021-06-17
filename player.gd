@@ -20,3 +20,10 @@ func start_swim():
 
 func swim_speed():
 	linear_velocity.y = -200
+
+
+func _on_hitbox_body_entered(body):
+	print("oof ow owie")
+	if (!self.is_queued_for_deletion() && body.is_in_group("rocks")):
+		queue_free()
+
