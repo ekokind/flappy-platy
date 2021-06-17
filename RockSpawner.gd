@@ -15,7 +15,9 @@ func _spawn_rock():
 
 func _set_rock_position(rock):
 	var rect = get_viewport().size
-	rock.position = Vector2(rand_range(0, rect.x), -100)
+	#rock.position = Vector2(rand_range(0, rect.x), -100)
+	rock.position = Vector2(250, rand_range(-10, 400)) 
+	# 250 so they spawn off screen, -10 to 400 so they spawn somewhere above or below the platy
 
 
 func _on_SpawnTimer_timeout():
