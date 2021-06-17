@@ -43,6 +43,8 @@ tracks/0/keys = {
 gravity_scale = 0.0
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2.03457, -3.30356 )
+scale = Vector2( 0.507088, 0.507088 )
 texture = ExtResource( 1 )
 hframes = 3
 frame = 2
